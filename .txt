@@ -1,0 +1,36 @@
+          <div class="card" style="width: 18rem">
+            <div class="card-body">
+              <h5 class="card-title">tip calculator</h5>
+              <div class="input-group">
+                <span class="input-group-text" id="visible-addon">$</span>
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="0.00"
+                  aria-label="dollar-ammount"
+                  aria-describedby="visible-addon"
+                />
+                <input
+                  type="text"
+                  class="form-control d-none"
+                  placeholder="Hidden input"
+                  aria-label="Hidden input"
+                  aria-describedby="visible-addon"
+                />
+              </div>
+              <br />
+              <div class="h4">tip percentage:</div>
+              <div class="input-group flex-nowrap">
+                <span class="input-group-text" id="addon-wrapping">%</span>
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="0.00"
+                  aria-label="tip-percentage"
+                  aria-describedby="addon-wrapping"
+                />
+              </div>
+              <br />
+              <a href="#" class="btn btn-primary">calculate</a>
+            </div>
+          </div>
