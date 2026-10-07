@@ -22,10 +22,6 @@ document.getElementById("tipCalculate").addEventListener("click", function () {
 });
 
 document
-  .getElementById("tipCalculate")
-  .addEventListener("click", function () {});
-
-document
   .getElementById("paycheckCalculate")
   .addEventListener("click", function () {});
 
