@@ -28,13 +28,16 @@
           <div class="card" style="width: 18rem">
             <div class="card-body">
               <h5 class="card-title">tip calculator</h5>
+              <br />
+              <h4>bill amount:</h4>
               <div class="input-group">
                 <span class="input-group-text" id="visible-addon">$</span>
                 <input
+                  id="billAmountinput"
                   type="text"
                   class="form-control"
                   placeholder="0.00"
-                  aria-label="dollar-ammount"
+                  aria-label="dollar-amount"
                   aria-describedby="visible-addon"
                 />
                 <input
@@ -49,7 +52,9 @@
               <div class="h4">tip percentage:</div>
               <div class="input-group flex-nowrap">
                 <span class="input-group-text" id="addon-wrapping">%</span>
+
                 <input
+                  id="tipPercentageinput"
                   type="text"
                   class="form-control"
                   placeholder="0.00"
@@ -58,12 +63,15 @@
                 />
               </div>
               <br />
-              <a href="#" class="btn btn-primary">calculate</a>
+              <a href="#" class="btn btn-primary" id="tipCalculate"
+                >calculate</a
+              >
               <br />
               <br />
-              <div class="col" id="tip-result-header">
-                <h4>Tip Amount: $0.00</h4>
-              </div>
+              <h4>
+                Tip Amount:
+                <span id="tipAmountoutput">$0.00</span>
+              </h4>
             </div>
           </div>
         </div>
@@ -76,6 +84,7 @@
               <div class="h6">hours worked</div>
               <div class="input-group">
                 <input
+                  id="hoursWorkedinput"
                   type="text"
                   class="form-control"
                   placeholder="0.00"
@@ -95,6 +104,7 @@
               <div class="input-group flex-nowrap">
                 <span class="input-group-text" id="addon-wrapping">$</span>
                 <input
+                  id="hourlyRateinput"
                   type="text"
                   class="form-control"
                   placeholder="0.00"
@@ -102,8 +112,14 @@
                   aria-describedby="addon-wrapping"
                 />
               </div>
+              <h4>
+                Paycheck Amount:
+                <span id="paycheckAmount">$0.00</span>
+              </h4>
               <br />
-              <a href="#" class="btn btn-primary">calculate</a>
+              <a href="#" class="btn btn-primary" id="paycheckCalculate"
+                >calculate</a
+              >
             </div>
           </div>
         </div>
@@ -112,8 +128,12 @@
           <div class="card" style="width: 18rem">
             <div class="card-body">
               <h5 class="card-title">grade calculator</h5>
+              <br />
+              <br />
+              <h4>grade points earned:</h4>
               <div class="input-group">
                 <input
+                  id="gradePointsEarnedinput"
                   type="text"
                   class="form-control"
                   placeholder="0.00"
@@ -129,7 +149,7 @@
                 />
               </div>
               <br />
-              <div class="h4">grade percentage:</div>
+              <div class="h4">total points:</div>
               <div class="input-group flex-nowrap">
                 <input
                   type="text"
@@ -139,8 +159,14 @@
                   aria-describedby="addon-wrapping"
                 />
               </div>
+              <h4>
+                Grade Percentage:
+                <span id="gradePercentage">0.00%</span>
+              </h4>
               <br />
-              <a href="#" class="btn btn-primary">calculate</a>
+              <a href="#" class="btn btn-primary" id="gradeCalculate"
+                >calculate</a
+              >
             </div>
           </div>
         </div>
@@ -151,6 +177,7 @@
           <h5 class="card-title">gas cost calculator</h5>
           <div class="input-group">
             <input
+              id="gasTankinput"
               type="text"
               class="form-control"
               placeholder="0.00"
@@ -170,6 +197,7 @@
           <div class="input-group flex-nowrap">
             <span class="input-group-text" id="addon-wrapping">$</span>
             <input
+              id="gasPriceinput"
               type="text"
               class="form-control"
               placeholder="0.00"
@@ -178,7 +206,12 @@
             />
           </div>
           <br />
-          <a href="#" class="btn btn-primary">calculate</a>
+
+          <h4>
+            Gas Cost per tank:
+            <span id="gasCostoutput">$0.00</span>
+          </h4>
+          <a href="#" class="btn btn-primary" id="gasCalculate">calculate</a>
         </div>
       </div>
     </div>
@@ -187,5 +220,6 @@
       integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
       crossorigin="anonymous"
     ></script>
+    <script src="sandbox.js"></script>
   </body>
 </html>
