@@ -21,10 +21,21 @@ document.getElementById("tipCalculate").addEventListener("click", function () {
   document.getElementById("tipAmountoutput").textContent = tipAmountoutput;
 });
 
+document.getElementById("gradeCalculate").addEventListener("click", function () {
+    gradePointsEarnedinput = document.getElementById("gradePointsEarnedinput").value;
+    totalPointsinput = document.getElementById("totalPointsinput").value;
+    let gradePercentage = (gradePointsEarnedinput / totalPointsinput) * 100;
+    document.getElementById("gradePercentage").textContent =
+      gradePercentage.toFixed(2) + "%";
+  });
+
+
+  
 document
   .getElementById("paycheckCalculate")
-  .addEventListener("click", function () {});
-
-document
-  .getElementById("gradeCalculate")
-  .addEventListener("click", function () {});
+  .addEventListener("click", function () {
+    hoursWorkedinput = document.getElementById("hoursWorkedinput").value;
+    hourlyRateinput = document.getElementById("hourlyRateinput").value;
+    let paycheckAmount = hoursWorkedinput * hourlyRateinput;
+    document.getElementById("paycheckAmount").textContent = paycheckAmount;
+  });
